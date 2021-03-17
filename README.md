@@ -1,5 +1,4 @@
 # EDenseNet  ["Hand Gesture Recognition via Enhanced Densely Connected Convolutional Neural Network"](https://doi.org/10.1016/j.eswa.2021.114797)
-To be updated soon.
 Implementation of EDenseNet (in tensorflow 1.15). For data augmentation, please refer to this ["repos"](https://github.com/YongSoonTan/CNN-SPP). 
 
 if you find this code useful for your research, please consider citing (this citation will be updated again later):
