@@ -8,13 +8,17 @@ Implementation of EDenseNet (in tensorflow 1.15). For data augmentation, please 
 
 if you find this code useful for your research, please consider citing (this citation will be updated again later):
 
-    @article{tan2021hand,
-      title={Hand Gesture Recognition via Enhanced Densely Connected Convolutional Neural Network},
-      author={Tan, Yong Soon and Lim, Kian Ming and Lee, Chin Poo},
-      journal={Expert Systems with Applications},
-      pages={114797},
-      year={2021},
-      publisher={Elsevier}
+    @article{TAN2021114797,
+    title = {Hand gesture recognition via enhanced densely connected convolutional neural network},
+    journal = {Expert Systems with Applications},
+    volume = {175},
+    pages = {114797},
+    year = {2021},
+    issn = {0957-4174},
+    doi = {https://doi.org/10.1016/j.eswa.2021.114797},
+    url = {https://www.sciencedirect.com/science/article/pii/S0957417421002384},
+    author = {Yong Soon Tan and Kian Ming Lim and Chin Poo Lee},
+    keywords = {Sign language recognition, Hand gesture recognition, Convolutional neural network (CNN), Enhanced densely connected convolutional neural network (EDenseNet)}
     }
     
 if GPU memory is not an issue, during testing, you can run all test images at once, just remove for loop in line 262 and line 378, and dedent the block of codes, and set the test images, labels and relevant variables accordingly. 
