@@ -23,7 +23,7 @@ if you find this code useful for your research, please consider citing (this cit
     
 if GPU memory is not an issue, during testing, you can run all test images at once, just remove for loop in line 262 and line 378, and dedent the block of codes, and set the test images, labels and relevant variables accordingly. 
 
- ## Datasets (Please refer to this ["repos"](https://github.com/YongSoonTan/CNN-SPP))
+ ## Datasets (Please refer to this ["repos"](https://github.com/YongSoonTan/CNN-SPP)) (All three static hand gesture datasets ["here"](https://github.com/YongSoonTan/Static_Hand_Gesture_Datasets))
  
  For ASL dataset, augmented training set is not provided, as they are too large to upload (2GB for each fold). However, training set without augmented data is provided, each fold of the training sets is compressed into 3 parts. you can reproduce training sets with augmented data using the Data_Aug.py file provided.
  
