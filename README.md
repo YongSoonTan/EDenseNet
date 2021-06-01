@@ -2,8 +2,8 @@
 Implementation of EDenseNet (in tensorflow 1.15 and Tensorflow 2.5.0).
 
 Tensorflow 2 implmentation is slightly faster to train, a lot faster to testing. 
-Plus it is easier to configure, please consider citing the paper if you find the code useful.
-Driver code for Tensorflow 2 implementation is in EDenseNet_tf2.py.
+Plus it is easier to configure, driver code for Tensorflow 2 implementation is in EDenseNet_tf2.py.
+
 You can get slightly better result when you run the Tensorflow 2 implementation, for both with and without data augmentation, than the one reported in the paper, will update the results when I have time. 
 
 For data augmentation, please refer to this ["repos"](https://github.com/YongSoonTan/CNN-SPP). 
