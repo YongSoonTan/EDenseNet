@@ -42,7 +42,7 @@ class Model_Parameters:
     num_classes = 10
     
 param = Model_Parameters()
-model = DenseNet(param, name="EDenseNet")
+model = EDenseNet(param, name="EDenseNet")
 model = model.model()
 model.compile(
     optimizer=tf.keras.optimizers.Adam(learning_rate=param.learn_rate),
