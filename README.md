@@ -1,7 +1,7 @@
 # EDenseNet  ["Hand Gesture Recognition via Enhanced Densely Connected Convolutional Neural Network"](https://doi.org/10.1016/j.eswa.2021.114797)
 Implementation of EDenseNet (in tensorflow 1.15 and Tensorflow 2.5.0).
 
-Tensorflow 2 implmentation is slightly faster to train, a lot faster to testing. 
+Tensorflow 2 implmentation is slightly faster to train, a lot faster to test. 
 Plus it is easier to configure, driver code for Tensorflow 2 implementation is in EDenseNet_tf2.py.
 
 You can get slightly better result when you run the Tensorflow 2 implementation, for both with and without data augmentation, than the one reported in the paper, will update the results when I have time. 
