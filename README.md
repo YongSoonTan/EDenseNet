@@ -32,7 +32,7 @@ if GPU memory is not an issue, during testing, you can run all test images at on
 
  ## Datasets (Please refer to this ["repos"](https://github.com/YongSoonTan/CNN-SPP)) (All three static hand gesture datasets in raw form ["here"](https://github.com/YongSoonTan/Static_Hand_Gesture_Datasets))
  
- For ASL dataset, augmented training set is not provided, as they are too large to upload (2GB for each fold). However, training set without augmented data is provided, each fold of the training sets is compressed into 3 parts. you can reproduce training sets with augmented data using the Data_Aug.py file provided.
+ For ASL dataset, augmented training set is not provided, as they are too large to upload (2GB for each fold). However, training set without augmented data is provided, each fold of the training sets is compressed into 3 parts. you can reproduce training sets with augmented data by using the Data_Aug.py file provided.
  
  For ASL with digits and NUS hand gesture dataset, training set with and without augmented data are both provided, where augmented training sets are compressed into parts.
  
