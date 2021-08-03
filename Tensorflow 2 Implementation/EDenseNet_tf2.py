@@ -72,7 +72,7 @@ history = model.fit(train_ds, epochs=epochs_to_train,
 # then append the test_loss and test_acc returns by model.evaluate to the list inside the for loop
 # test_loss_list.append(test_loss)
 # test_acc_list.append(test_acc)
-# Then, when you plot the graph, comment out line 87, and uncomment line 88
+# Then, when you plot the graph, comment out line 88, and uncomment line 89
 # ALTERNATIVELY, you can simply just use validation_data=test_ds in model.fit(),
 # since the test methodology used here is k-fold cross validation, where k=5,
 # and in k-fold cross validation end of page 4, start of page 5 
