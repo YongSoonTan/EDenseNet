@@ -23,10 +23,11 @@ def densenet(D,DT,F,model):
   dropout_prob = model.dropout_prob
   num_of_test = model.num_of_test
 
-  ''' load training / testing set from CrossVal folder,
-  names for training set, 'D1_1st_fold_train.mat', 'Augmented_D1_1st_fold_train.mat'
-  name for testing set, 'D1_1st_fold_test.mat'
-  '''
+  ###############
+  # load training / testing set from CrossVal folder,
+  # names for training set, 'D1_1st_fold_train.mat', 'Augmented_D1_1st_fold_train.mat'
+  # name for testing set, 'D1_1st_fold_test.mat'
+  ###############
   if F == 1:
     file_name = '1st_fold'
   elif F == 2:
