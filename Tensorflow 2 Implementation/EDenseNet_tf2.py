@@ -65,12 +65,21 @@ history = model.fit(train_ds, epochs=epochs_to_train,
 # simply by adding 
 # test_loss, test_acc = model.evaluate(test_ds, verbose=2) afterwards.
 # print(f'test loss: {test_loss}, test accuracy: {test_acc}')
+# to keep track of test_loss and test_acc at the end of each epoch,
+# declare a list before the for loop, 
+# test_loss_list = []
+# test_acc_list = []
+# then append the test_loss and test_acc returns by model.evaluate to the list inside the for loop
+# test_loss_list.append(test_loss)
+# test_acc_list.append(test_acc)
+# Then, when you plot the graph, comment out line 81, and uncomment line 82
 # ALTERNATIVELY, you can simply just use validation_data=test_ds in model.fit()
                     
 # plot graph for accuracy over epochs
 import matplotlib.pyplot as plt
 plt.plot(history.history['accuracy'], label='accuracy')
 plt.plot(history.history['val_accuracy'], label = 'val_accuracy')
+# plt.plot(test_acc_list , label = 'val_accuracy')
 plt.xlabel('Epoch')
 plt.ylabel('Accuracy')
 plt.ylim([0.5, 1])
