@@ -77,7 +77,8 @@ history = model.fit(train_ds, epochs=epochs_to_train,
 # since the test methodology used here is k-fold cross validation, where k=5,
 # and in k-fold cross validation end of page 4, start of page 5 
 # (https://www.jmlr.org/papers/volume5/grandvalet04a/grandvalet04a.pdf), 
-# there's only two sets, training set and testing set(otherwise known as validation set) in k-fold cross validation.
+# there's only two sets, training set and testing set(otherwise known as validation set) in k-fold cross validation,
+# therefore, I simply use validation_data=test_ds in model.fit() as a short cut.
 # However, for other test methodology, dataset can be splited into 3 parts, training, validation, and testing.
 # In that case, please use validation_data in model.fit() for validation set, and model.evaluate for testing set.
                     
