@@ -58,13 +58,13 @@ print(model.get_weights())
 history = model.fit(train_ds, epochs=epochs_to_train, 
                     validation_data=test_ds, verbose=1)
 # validation=test_ds used in model.fit() is simply a shortcut for
-# model.evaluate(test_ds), the model IS NOT BEING TRAINED on validation_data, 
+# model.evaluate(test_ds), the model IS NOT BEING TRAINED on validation_data when you use it in model.fit(), 
 # see official docs here, https://www.tensorflow.org/api_docs/python/tf/keras/Model#fit
 # you can verify it by puting model.fit and model.evaluate in a for loop, and in each for loop,
-# set epochs=1 in model.fit, and to see the model's performance on test set, 
-# simply add model.evaluate(test_ds) afterwards.
-# AND please make sure you define an object of tf.keras.metrics.SparseCategoricalCrossentropy
-# to keep track of the loss and metrics, and use update_state and reset_state (after each epoch) accordingly
+# set epochs=1 in model.fit(), and to see the model's performance on test set, 
+# simply by adding 
+# test_loss, test_acc = model.evaluate(test_ds, verbose=2) afterwards.
+# print(f'test loss: {test_loss}, test accuracy: {test_acc}')
 # ALTERNATIVELY, you can simply just use validation_data=test_ds in model.fit()
                     
 # plot graph for accuracy over epochs
